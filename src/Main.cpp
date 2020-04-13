@@ -9,18 +9,8 @@ Log serialLog;
 void setup() {
   serialLog.init();
   serialLog.setPlotGroup("none"); // none, SM, LS
-  gateController.initLeftMotor(
-    27, // Motor 1 Enable
-    14, // Motor 1 A Pin
-    32, // Motor 1 B Pin
-    34  // Motor 1 Current 
-  );
-  gateController.initRightMotor(
-    26, // Motor 2 Enable
-    25, // Motor 2 A Pin
-    33, // Motor 2 B Pin
-    35  // Motor 2 Current  
-  );
+  gateController.initLeftMotor(27,14,32,34);
+  gateController.initRightMotor(26,25,33,35);
 }
 
 void loop() {

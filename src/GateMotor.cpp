@@ -51,10 +51,10 @@ void GateMotor::calibrateCurrentSensor() {
   
   for (int i = 0; i < 10; i++) {
     delay(20);
-    total += abs(analogRead(motorSensorPin));
+    total += (analogRead(motorSensorPin));
   }
 
   motorCurrentZeroValue = total / 10;
-  serialLog.message("Calibrated Current Sensor Zero: "+motorCurrentZeroValue);
+  serialLog.message(&"Calibrated Current Sensor Zero: "[motorCurrentZeroValue]);
   motorCurrent.fillValue(0, 50);
 }

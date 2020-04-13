@@ -1,8 +1,10 @@
 <component name="ProjectDictionaryState">
   <dictionary name="tyler">
     <words>
+      <w>gatecontroller</w>
       <w>gatemotor</w>
       <w>lightsensor</w>
+      <w>sensormodule</w>
       <w>thres</w>
     </words>
   </dictionary>

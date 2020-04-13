@@ -38,23 +38,19 @@ void GateController::closeGate() {
 // any can be moving
 bool GateController::isMoving() {
     return leftMotor.isMoving() || rightMotor.isMoving();
-
 }
 
 // both have to be open
 bool GateController::isOpen() {
     return leftMotor.isOpen() && rightMotor.isOpen();
-
 }
 
 // both have to be stopped
 bool GateController::isStopped() {
     return leftMotor.isStopped() && rightMotor.isStopped();
-
 }
 
 // both have to be closed
 bool GateController::isClosed() {
   return leftMotor.isClosed() && rightMotor.isClosed();
-
 }

@@ -8,7 +8,7 @@ class Adafruit_ADS1015;
 
 class SensorModule {
   private:
-    bool buttonPressedDown = false;
+    double buttonCoolDownTill = 0;
     Adafruit_ADS1015 ads;
     LightSensor houseCenter;
     LightSensor roadRight;
