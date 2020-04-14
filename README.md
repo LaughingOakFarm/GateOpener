@@ -1,2 +1,2 @@
 ## GateOpener
-![C/C++ CI](https://github.com/LaughingOakFarm/GateOpener/workflows/C/C++%20CI/badge.svg)
+![PlatformIO CI](https://github.com/LaughingOakFarm/GateOpener/workflows/PlatformIO%20CI/badge.svg)
