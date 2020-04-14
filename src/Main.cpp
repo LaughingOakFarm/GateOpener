@@ -21,6 +21,8 @@ void loop() {
   }
 
   if (sensorModule.buttonPressed()) {
-    gateController.openGate();
+    gateController.buttonPressed();
   }
+
+  gateController.process();
 }

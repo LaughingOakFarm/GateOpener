@@ -24,6 +24,8 @@ class GateController {
     bool isOpen();
     bool isStopped();
     bool isClosed();
+    void process();
+    void buttonPressed();
 };
 
 #endif

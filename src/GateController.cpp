@@ -14,43 +14,57 @@ void GateController::initRightMotor(uint8_t speedPin, uint8_t direction1Pin, uin
 void GateController::openGate(int openPause) {
   serialLog.message("Opening Gate");
   currentCommand = 'o';
-  
-  leftMotor.openGate();
-  rightMotor.openGate();
 }
 
 void GateController::stopGate() {
   serialLog.message("Stopping Gate");
   currentCommand = 's';
-  
-  leftMotor.stopGate();
-  rightMotor.stopGate();
 }
 
 void GateController::closeGate() {
   serialLog.message("Closing Gate");
   currentCommand = 'c';
-  
-  leftMotor.closeGate();
-  rightMotor.closeGate();
 }
 
-// any can be moving
+void GateController::buttonPressed() {
+    if(currentCommand == 'o') {
+        stopGate();
+    } else if(currentCommand == 's') {
+        closeGate();
+    } else { // if the gate is closed or in process of closing
+        openGate();
+    }
+}
+
+void GateController::process() {
+    if(currentCommand == 'o') {
+        leftMotor.openGate();
+        rightMotor.openGate();
+    } else if(currentCommand == 's') {
+        leftMotor.stopGate();
+        rightMotor.stopGate();
+    } else if(currentCommand == 'c') {
+        leftMotor.closeGate();
+        rightMotor.closeGate();
+    }
+}
+
+// any sides can be moving
 bool GateController::isMoving() {
     return leftMotor.isMoving() || rightMotor.isMoving();
 }
 
-// both have to be open
+// both sides have to be open
 bool GateController::isOpen() {
     return leftMotor.isOpen() && rightMotor.isOpen();
 }
 
-// both have to be stopped
+// both sides have to be stopped
 bool GateController::isStopped() {
     return leftMotor.isStopped() && rightMotor.isStopped();
 }
 
-// both have to be closed
+// both sides have to be closed
 bool GateController::isClosed() {
   return leftMotor.isClosed() && rightMotor.isClosed();
 }
