@@ -1,0 +1,5 @@
+/Volumes/Projects/Ardunio/GateOpenerPIO/cmake-build-esp32doit-devkit-v1/CMakeFiles/rebuild_cache.dir
+/Volumes/Projects/Ardunio/GateOpenerPIO/cmake-build-esp32doit-devkit-v1/CMakeFiles/edit_cache.dir
+/Volumes/Projects/Ardunio/GateOpenerPIO/cmake-build-esp32doit-devkit-v1/CMakeFiles/Z_DUMMY_TARGET.dir
+/Volumes/Projects/Ardunio/GateOpenerPIO/cmake-build-esp32doit-devkit-v1/CMakeFiles/Debug.dir
+/Volumes/Projects/Ardunio/GateOpenerPIO/cmake-build-esp32doit-devkit-v1/CMakeFiles/Production.dir

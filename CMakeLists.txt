@@ -32,4 +32,4 @@ add_custom_target(
 
 add_executable(Z_DUMMY_TARGET ${SRC_LIST})
 
-add_subdirectory(Google_tests)
+#add_subdirectory(Google_tests)
