@@ -16,7 +16,7 @@ void setup() {
     serialLog.message("----- SETUP DONE! -----", "Main");
 }
 
-void loop() {\
+void loop() {
     serialLog.message("Start of Loop", "Main");
     sensorModule.readSensors();
 
