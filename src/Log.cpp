@@ -8,9 +8,9 @@ void Log::init() {
   serialLog.message("Serial Log Init");
 }
 
-void Log::message(String message) {
+void Log::message(String message, String prefix) {
   if(plotGroup == "none") {
-    Serial.println(String("Log: " + message)); 
+    Serial.println(String(prefix + ": " + message));
   }
 }
 

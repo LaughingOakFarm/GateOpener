@@ -7,7 +7,7 @@ class GateMotor;
 
 class GateController {
   private:
-    char currentCommand = 'n'; // none, open, close, stop
+    char currentCommand = 'u'; // unknown, open, close, stop
     GateMotor leftMotor;
     GateMotor rightMotor;
    
@@ -20,11 +20,11 @@ class GateController {
     void stopGate();
     void closeGate();
 
-    bool isMoving();
-    bool isOpen();
-    bool isStopped();
-    bool isClosed();
-    void process();
+//    bool isMoving();
+//    bool isOpen();
+//    bool isStopped();
+//    bool isClosed();
+    void runCommands();
     void buttonPressed();
 };
 

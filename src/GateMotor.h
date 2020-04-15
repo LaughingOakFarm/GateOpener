@@ -8,7 +8,13 @@ class RunningAverage;
 
 class GateMotor {
   private:
-    char state = 'u'; // unknown, open, closed
+    char currentCommand = 'u'; // unknown, open, close, stop
+    uint32_t sprintTime = 16000;
+    uint32_t sprintTimeToSlowDown = 0;
+    uint8_t sprintSpeed = 255;
+    uint8_t defaultSpeed = 200;
+    uint16_t currentThreshold = 25;
+    uint32_t stopTill = 0;
 
     uint8_t motorSpeedPin;
     uint8_t motorDirectionPin1;
@@ -26,11 +32,13 @@ class GateMotor {
     void openGate();
     void closeGate();
     void stopGate();
+    void runCommands();
+    float getCurrentSensorValue();
 
-    bool isMoving();
-    bool isOpen();
-    bool isStopped();
-    bool isClosed();
+//    bool isMoving();
+//    bool isOpen();
+//    bool isStopped();
+//    bool isClosed();
 };
 
 #endif

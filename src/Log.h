@@ -10,7 +10,7 @@ class Log {
     Log();
 
     void init();
-    void message(String message);
+    void message(String message, String prefix = "Log");
     void setPlotGroup(String groupName = "none");
     void plot(String groupName, String varName, int varValue, bool newLine = false);
 
