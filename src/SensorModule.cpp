@@ -9,12 +9,10 @@ SensorModule::SensorModule() :
 }
 
 void SensorModule::readSensors() {
-    serialLog.message("readSensors of runCommands", "SM");
     lightSensor1Value = ads.readADC_SingleEnded(0);
     lightSensor2Value = ads.readADC_SingleEnded(2);
     lightSensor3Value = ads.readADC_SingleEnded(3);
     buttonValue = ads.readADC_SingleEnded(1);
-    serialLog.message("readSensors of runCommands", "SM");
 
     serialLog.plot("SM", "Light1", lightSensor1Value);
     serialLog.plot("SM", "Light2", lightSensor2Value);
@@ -32,8 +30,9 @@ bool SensorModule::buttonPressed() {
         serialLog.message("Button Cool Down Time is over.", "SM");
     }
 
-    if (buttonValue > 1250) { // button pressed down
+    if (buttonValue > 1300) { // button pressed down
         buttonCoolDownTill = millis() + 1000;
+        serialLog.message(String(buttonValue));
         serialLog.message("Button Pressed!", "SM");
 
         return true;

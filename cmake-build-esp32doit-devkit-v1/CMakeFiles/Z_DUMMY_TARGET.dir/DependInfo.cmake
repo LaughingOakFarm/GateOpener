@@ -4,16 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ACS712 Current Sensor_ID1601/src/ACS712.cpp" "/Volumes/Projects/Ardunio/GateOpenerPIO/cmake-build-esp32doit-devkit-v1/CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/esp32doit-devkit-v1/ACS712_Current_Sensor_ID1601/src/ACS712.cpp.obj"
-  "/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/Adafruit ADS1X15_ID342/Adafruit_ADS1015.cpp" "/Volumes/Projects/Ardunio/GateOpenerPIO/cmake-build-esp32doit-devkit-v1/CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/esp32doit-devkit-v1/Adafruit_ADS1X15_ID342/Adafruit_ADS1015.cpp.obj"
-  "/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ESP32 AnalogWrite_ID5819/src/analogWrite.cpp" "/Volumes/Projects/Ardunio/GateOpenerPIO/cmake-build-esp32doit-devkit-v1/CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/esp32doit-devkit-v1/ESP32_AnalogWrite_ID5819/src/analogWrite.cpp.obj"
-  "/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/RunningAverage_ID1322/RunningAverage.cpp" "/Volumes/Projects/Ardunio/GateOpenerPIO/cmake-build-esp32doit-devkit-v1/CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/esp32doit-devkit-v1/RunningAverage_ID1322/RunningAverage.cpp.obj"
+  "/Volumes/Projects/Ardunio/GateOpenerPIO/src/Adafruit_ADS1015.cpp" "/Volumes/Projects/Ardunio/GateOpenerPIO/cmake-build-esp32doit-devkit-v1/CMakeFiles/Z_DUMMY_TARGET.dir/src/Adafruit_ADS1015.cpp.obj"
   "/Volumes/Projects/Ardunio/GateOpenerPIO/src/GateController.cpp" "/Volumes/Projects/Ardunio/GateOpenerPIO/cmake-build-esp32doit-devkit-v1/CMakeFiles/Z_DUMMY_TARGET.dir/src/GateController.cpp.obj"
   "/Volumes/Projects/Ardunio/GateOpenerPIO/src/GateMotor.cpp" "/Volumes/Projects/Ardunio/GateOpenerPIO/cmake-build-esp32doit-devkit-v1/CMakeFiles/Z_DUMMY_TARGET.dir/src/GateMotor.cpp.obj"
   "/Volumes/Projects/Ardunio/GateOpenerPIO/src/LightSensor.cpp" "/Volumes/Projects/Ardunio/GateOpenerPIO/cmake-build-esp32doit-devkit-v1/CMakeFiles/Z_DUMMY_TARGET.dir/src/LightSensor.cpp.obj"
   "/Volumes/Projects/Ardunio/GateOpenerPIO/src/Log.cpp" "/Volumes/Projects/Ardunio/GateOpenerPIO/cmake-build-esp32doit-devkit-v1/CMakeFiles/Z_DUMMY_TARGET.dir/src/Log.cpp.obj"
   "/Volumes/Projects/Ardunio/GateOpenerPIO/src/Main.cpp" "/Volumes/Projects/Ardunio/GateOpenerPIO/cmake-build-esp32doit-devkit-v1/CMakeFiles/Z_DUMMY_TARGET.dir/src/Main.cpp.obj"
+  "/Volumes/Projects/Ardunio/GateOpenerPIO/src/RunningAverage.cpp" "/Volumes/Projects/Ardunio/GateOpenerPIO/cmake-build-esp32doit-devkit-v1/CMakeFiles/Z_DUMMY_TARGET.dir/src/RunningAverage.cpp.obj"
   "/Volumes/Projects/Ardunio/GateOpenerPIO/src/SensorModule.cpp" "/Volumes/Projects/Ardunio/GateOpenerPIO/cmake-build-esp32doit-devkit-v1/CMakeFiles/Z_DUMMY_TARGET.dir/src/SensorModule.cpp.obj"
+  "/Volumes/Projects/Ardunio/GateOpenerPIO/src/analogWrite.cpp" "/Volumes/Projects/Ardunio/GateOpenerPIO/cmake-build-esp32doit-devkit-v1/CMakeFiles/Z_DUMMY_TARGET.dir/src/analogWrite.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

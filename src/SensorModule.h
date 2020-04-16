@@ -2,7 +2,7 @@
 #define SENSORMODULE_H
 
 #include "LightSensor.h"
-#include "../.pio/libdeps/esp32doit-devkit-v1/Adafruit ADS1X15_ID342/Adafruit_ADS1015.h"
+#include "Adafruit_ADS1015.h"
 
 class Adafruit_ADS1015;
 

@@ -1,7 +1,7 @@
 #ifndef LIGHTSENSOR_H
 #define LIGHTSENSOR_H
 
-#include "../.pio/libdeps/esp32doit-devkit-v1/RunningAverage_ID1322/RunningAverage.h"
+#include "RunningAverage.h"
 
 class RunningAverage;
 

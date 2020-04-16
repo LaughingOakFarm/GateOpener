@@ -2,7 +2,7 @@
 #define GATEMOTOR_H
 
 #include "Arduino.h"
-#include "../.pio/libdeps/esp32doit-devkit-v1/RunningAverage_ID1322/RunningAverage.h"
+#include "RunningAverage.h"
 
 class RunningAverage;
 
@@ -13,7 +13,7 @@ class GateMotor {
     uint32_t sprintTimeToSlowDown = 0;
     uint8_t sprintSpeed = 255;
     uint8_t defaultSpeed = 200;
-    uint16_t currentThreshold = 25;
+    uint16_t currentThreshold = 15;
     uint32_t stopTill = 0;
 
     uint8_t motorSpeedPin;
@@ -29,16 +29,18 @@ class GateMotor {
     GateMotor();
     GateMotor(uint8_t speedPin, uint8_t directionPin1, uint8_t directionPin2, uint8_t sensorPin);
 
-    void openGate();
-    void closeGate();
+    void openGate(bool block = false, int speed = 200);
+    void closeGate(bool block = false);
     void stopGate();
-    void runCommands();
     float getCurrentSensorValue();
+    void blockTillMotorStops();
 
+//    void runCommands();
 //    bool isMoving();
 //    bool isOpen();
 //    bool isStopped();
 //    bool isClosed();
+
 };
 
 #endif

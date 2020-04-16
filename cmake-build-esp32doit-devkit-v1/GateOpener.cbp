@@ -284,145 +284,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ACS712 Current Sensor_ID1601/.gitignore">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ACS712 Current Sensor_ID1601/.library.json">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ACS712 Current Sensor_ID1601/.travis.yml">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ACS712 Current Sensor_ID1601/README.md">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ACS712 Current Sensor_ID1601/examples/MeasureCurrentDC/MeasureCurrentDC.ino">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ACS712 Current Sensor_ID1601/examples/Wattmeter/Wattmeter.ino">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ACS712 Current Sensor_ID1601/img/ACS712_arduino_wiring.jpg">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ACS712 Current Sensor_ID1601/img/ACS712_esp8266_wiring.jpg">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ACS712 Current Sensor_ID1601/keywords.txt">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ACS712 Current Sensor_ID1601/library.json">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ACS712 Current Sensor_ID1601/library.properties">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ACS712 Current Sensor_ID1601/src/ACS712.cpp">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ACS712 Current Sensor_ID1601/src/ACS712.h">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/Adafruit ADS1X15_ID342/.github/ISSUE_TEMPLATE.md">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/Adafruit ADS1X15_ID342/.github/PULL_REQUEST_TEMPLATE.md">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/Adafruit ADS1X15_ID342/.github/workflows/githubci.yml">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/Adafruit ADS1X15_ID342/.library.json">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/Adafruit ADS1X15_ID342/Adafruit_ADS1015.cpp">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/Adafruit ADS1X15_ID342/Adafruit_ADS1015.h">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/Adafruit ADS1X15_ID342/README.md">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/Adafruit ADS1X15_ID342/examples/comparator/comparator.ino">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/Adafruit ADS1X15_ID342/examples/differential/differential.ino">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/Adafruit ADS1X15_ID342/examples/singleended/singleended.ino">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/Adafruit ADS1X15_ID342/library.properties">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/Adafruit ADS1X15_ID342/license.txt">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ESP32 AnalogWrite_ID5819/.library.json">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ESP32 AnalogWrite_ID5819/README.md">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ESP32 AnalogWrite_ID5819/examples/ledFade/ledFade.ino">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ESP32 AnalogWrite_ID5819/keywords.txt">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ESP32 AnalogWrite_ID5819/library.json">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ESP32 AnalogWrite_ID5819/library.properties">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ESP32 AnalogWrite_ID5819/src/analogWrite.cpp">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/ESP32 AnalogWrite_ID5819/src/analogWrite.h">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/RunningAverage_ID1322/.library.json">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/RunningAverage_ID1322/RunningAverage.cpp">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/RunningAverage_ID1322/RunningAverage.h">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/RunningAverage_ID1322/examples/fillValue/fillValue.ino">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/RunningAverage_ID1322/examples/ra_FastAverageTest/ra_FastAverageTest.ino">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/RunningAverage_ID1322/examples/ra_MinMaxBufferTest/ra_MinMaxBufferTest.ino">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/RunningAverage_ID1322/examples/ra_MinMaxTest/ra_MinMaxTest.ino">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/RunningAverage_ID1322/examples/ra_getValue/ra_getValue.ino">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/RunningAverage_ID1322/examples/ra_hour/ra_hour.ino">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/RunningAverage_ID1322/examples/ra_test/ra_test.ino">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/RunningAverage_ID1322/keywords.txt">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/RunningAverage_ID1322/library.json">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/.pio/libdeps/esp32doit-devkit-v1/RunningAverage_ID1322/library.properties">
-			<Option target="Z_DUMMY_TARGET"/>
-		</Unit>
 		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/src/.DS_Store">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/src/Adafruit_ADS1015.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/src/Adafruit_ADS1015.h">
 			<Option target="Z_DUMMY_TARGET"/>
 		</Unit>
 		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/src/GateController.cpp">
@@ -452,16 +320,28 @@
 		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/src/Main.cpp">
 			<Option target="Z_DUMMY_TARGET"/>
 		</Unit>
+		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/src/RunningAverage.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/src/RunningAverage.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
 		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/src/SensorModule.cpp">
 			<Option target="Z_DUMMY_TARGET"/>
 		</Unit>
 		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/src/SensorModule.h">
 			<Option target="Z_DUMMY_TARGET"/>
 		</Unit>
+		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/src/analogWrite.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/src/analogWrite.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
 		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/CMakeListsPrivate.txt">
+		<Unit filename="/Volumes/Projects/Ardunio/GateOpenerPIO/__CMakeListsPrivate.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

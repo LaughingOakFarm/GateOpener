@@ -19,16 +19,29 @@ void GateController::initRightMotor(
   rightMotor = GateMotor(speedPin, direction1Pin, direction2Pin, sensorPin);
 }
 
-void GateController::openGate(int openPause) {
-  serialLog.message("Opening Gate", "Controller");
-  currentCommand = 'o';
-  leftMotor.openGate();
-  rightMotor.openGate();
+void GateController::openGate() {
+    serialLog.message("Opening Gate", "Controller");
+    currentCommand = 'o';
+
+    leftMotor.openGate(false, 255);
+    rightMotor.openGate(false, 255);
+
+    delay(12000);
+
+    leftMotor.openGate(true, 200);
+    rightMotor.openGate(true, 200);
+
+    stopGate();
+
+    delay(30000);
+
+    closeGate();
 }
 
 void GateController::stopGate() {
   serialLog.message("Stopping Gate", "Controller");
   currentCommand = 's';
+
   leftMotor.stopGate();
   rightMotor.stopGate();
 }
@@ -36,24 +49,25 @@ void GateController::stopGate() {
 void GateController::closeGate() {
   serialLog.message("Closing Gate", "Controller");
   currentCommand = 'c';
-  leftMotor.closeGate();
-  rightMotor.closeGate();
+
+  leftMotor.closeGate(false);
+  rightMotor.closeGate(true);
 }
 
-void GateController::buttonPressed() {
-    if(currentCommand == 'o') {
-        stopGate();
-    } else if(currentCommand == 's') {
-        closeGate();
-    } else { // if the gate is closed or in process of closing
-        openGate();
-    }
-}
+//void GateController::triggered() {
+//    if(currentCommand == 'o') {
+//        stopGate();
+//    } else if(currentCommand == 's') {
+//        closeGate();
+//    } else { // if the gate is closed or in process of closing
+//        openGate();
+//    }
+//}
 
-void GateController::runCommands() {
-   leftMotor.runCommands();
-   rightMotor.runCommands();
-}
+//void GateController::runCommands() {
+//   leftMotor.runCommands();
+//   rightMotor.runCommands();
+//}
 
 //// any sides can be moving
 //bool GateController::isMoving() {
