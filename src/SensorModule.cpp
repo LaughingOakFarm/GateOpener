@@ -30,7 +30,7 @@ bool SensorModule::buttonPressed() {
         serialLog.message("Button Cool Down Time is over.", "SM");
     }
 
-    if (buttonValue > 1300) { // button pressed down
+    if (buttonValue > 1000) { // button pressed down
         buttonCoolDownTill = millis() + 1000;
         serialLog.message(String(buttonValue));
         serialLog.message("Button Pressed!", "SM");

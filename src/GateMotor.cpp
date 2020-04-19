@@ -56,7 +56,7 @@ void GateMotor::closeGate(bool block) {
     digitalWrite(motorDirectionPin1, false);
     digitalWrite(motorDirectionPin2, true);
 
-    analogWrite(motorSpeedPin, defaultSpeed);
+    analogWrite(motorSpeedPin, sprintSpeed);
 
     if(block) {
         delay(1000); // get the motors going..
