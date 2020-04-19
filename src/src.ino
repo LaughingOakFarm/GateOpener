@@ -24,9 +24,7 @@ void loop() {
 
     if(sensorModule.lightFlashed()) {
         gateController.openGate();
+    } else if (sensorModule.buttonPressed()) {
+        gateController.openGate();
     }
-
-//    else if (sensorModule.buttonPressed()) {
-//        gateController.openGate();
-//    }
 }

@@ -9,6 +9,7 @@ class Adafruit_ADS1015;
 class SensorModule {
   private:
     double buttonCoolDownTill = 0;
+    const int buttonGPIO = 39;
     Adafruit_ADS1015 ads;
     LightSensor houseCenter;
     LightSensor roadRight;

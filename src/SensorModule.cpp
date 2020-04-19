@@ -6,13 +6,14 @@ SensorModule::SensorModule() :
         roadRight(),
         roadLeft() {
     ads.begin();
+    pinMode(buttonGPIO, INPUT_PULLDOWN);
 }
 
 void SensorModule::readSensors() {
     lightSensor1Value = ads.readADC_SingleEnded(0);
     lightSensor2Value = ads.readADC_SingleEnded(2);
     lightSensor3Value = ads.readADC_SingleEnded(3);
-    buttonValue = ads.readADC_SingleEnded(1);
+    buttonValue = analogRead(buttonGPIO);
 
     serialLog.plot("SM", "Light1", lightSensor1Value);
     serialLog.plot("SM", "Light2", lightSensor2Value);
