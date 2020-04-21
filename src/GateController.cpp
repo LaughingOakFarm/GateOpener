@@ -23,12 +23,10 @@ void GateController::openGate() {
     serialLog.message("Opening Gate", "Controller");
     currentCommand = 'o';
 
-    leftMotor.openGate(true, 255);
-    rightMotor.openGate(true, 255);
+    leftMotor.openGate(false, 255);
+    rightMotor.openGate(false, 255);
 
-    stopGate();
-
-    delay(30000);
+    delay(60000); // open gate, wait 60 sec, close gate
 
     closeGate();
 }
