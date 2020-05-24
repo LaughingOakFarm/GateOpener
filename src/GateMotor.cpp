@@ -1,6 +1,5 @@
 #include "GateMotor.h"
 #include "Log.h"
-#include "analogWrite.h"
 
 GateMotor::GateMotor() : motorCurrent(50) {}
 

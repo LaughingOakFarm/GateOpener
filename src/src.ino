@@ -1,3 +1,4 @@
+#include "Arduino.h"
 #include "Log.h"
 #include "GateController.h"
 #include "SensorModule.h"
@@ -10,8 +11,8 @@ void setup() {
     delay(1000);
     serialLog.init();
     serialLog.setPlotGroup("none"); // none, SM, LS
-    gateController.initLeftMotor(27,14,32,34);
-    gateController.initRightMotor(26,25,33,35);
+    gateController.initLeftMotor(7,8,9,6);
+    gateController.initRightMotor(12,11,10,5);
 
     delay(1000);
     gateController.closeGate();

@@ -2,15 +2,11 @@
 #define SENSORMODULE_H
 
 #include "LightSensor.h"
-#include "Adafruit_ADS1015.h"
-
-class Adafruit_ADS1015;
 
 class SensorModule {
   private:
     double buttonCoolDownTill = 0;
-    const int buttonGPIO = 39;
-    Adafruit_ADS1015 ads;
+    const int buttonGPIO = 3;
     LightSensor houseCenter;
     LightSensor roadRight;
     LightSensor roadLeft;

@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Test" type="platformio" factoryName="PlatformIO Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="GateOpener" TARGET_NAME="Production" CONFIG_NAME="esp32doit-devkit-v1">
+  <configuration default="false" name="Test" type="platformio" factoryName="PlatformIO Test" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="GateOpenerPIO" TARGET_NAME="Production" CONFIG_NAME="esp32doit-devkit-v1">
     <method v="2">
       <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
     </method>

@@ -1,3 +1,6 @@
 .pio
 __CMakeListsPrivate.txt
 cmake-build-debug/
+cmake-build-esp32doit-devkit-v1/
+cmake-build-nanoatmega328/
+CMakeListsPrivate.txt

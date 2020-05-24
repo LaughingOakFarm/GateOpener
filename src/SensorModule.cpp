@@ -5,14 +5,13 @@ SensorModule::SensorModule() :
         houseCenter(),
         roadRight(),
         roadLeft() {
-    ads.begin();
-    pinMode(buttonGPIO, INPUT_PULLDOWN);
+    pinMode(buttonGPIO, INPUT);
 }
 
 void SensorModule::readSensors() {
-    lightSensor1Value = ads.readADC_SingleEnded(0);
-    lightSensor2Value = ads.readADC_SingleEnded(2);
-    lightSensor3Value = ads.readADC_SingleEnded(3);
+    lightSensor1Value = analogRead(A2);
+    lightSensor2Value = analogRead(A3);
+    lightSensor3Value = analogRead(A4);
     buttonValue = analogRead(buttonGPIO);
 
     serialLog.plot("SM", "Light1", lightSensor1Value);
