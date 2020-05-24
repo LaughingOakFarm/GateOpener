@@ -16,12 +16,12 @@ bool LightSensor::isTriggered(int rawLightInput) {
     float currentAvg = avg.getAverage();
 
     // falling edge detected
-    float fallingEdgeThres = currentAvg * 0.75;
+    float fallingEdgeThres = currentAvg * 0.90;
     if(!detectingFlash && rawLightInput < fallingEdgeThres) {
       detectingFlash = true;
 
       if(lightFlashNum == 0) {
-        flashTimer = hz * 3; // we have 3 seconds
+        flashTimer = hz * 4; // we have 3 seconds
       }
       
       lightFlashNum++;
@@ -36,7 +36,7 @@ bool LightSensor::isTriggered(int rawLightInput) {
     }
 
     // rising edge detected
-    float risingEdgeThres = currentAvg * 0.9;
+    float risingEdgeThres = currentAvg * 0.95;
     if(rawLightInput > risingEdgeThres) {
       detectingFlash = false;
     }

@@ -9,7 +9,7 @@ Log serialLog;
 void setup() {
     delay(1000);
     serialLog.init();
-    serialLog.setPlotGroup("SM"); // none, SM, LS
+    serialLog.setPlotGroup("none"); // none, SM, LS
     gateController.initLeftMotor(27,14,32,34);
     gateController.initRightMotor(26,25,33,35);
 
