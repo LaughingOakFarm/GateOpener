@@ -10,12 +10,12 @@ Log serialLog;
 void setup() {
     delay(1000);
     serialLog.init();
-    serialLog.setPlotGroup("none"); // none, SM, LS
-    gateController.initLeftMotor(7,8,9,6);
-    gateController.initRightMotor(12,11,10,5);
+    serialLog.setPlotGroup("none"); // none, SM, LS1, LS2, LS3
+    gateController.initLeftMotor(9,8,7,6);
+    gateController.initRightMotor(11,12,10,5);
 
-    delay(1000);
-    gateController.closeGate();
+//    delay(1000);
+//    gateController.closeGate();
 
     serialLog.message("----- SETUP DONE! -----", "Main");
 }

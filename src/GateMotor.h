@@ -29,8 +29,8 @@ class GateMotor {
     GateMotor();
     GateMotor(uint8_t speedPin, uint8_t directionPin1, uint8_t directionPin2, uint8_t sensorPin);
 
-    void openGate(bool block = false, int speed = 200);
-    void closeGate(bool block = false);
+    void openGate(bool block = false, int speed = 255);
+    void closeGate(bool block = false, int speed = 255);
     void stopGate();
     float getCurrentSensorValue();
     void blockTillMotorStops();

@@ -3,7 +3,7 @@
 Log::Log() {}
 
 void Log::init() {
-  Serial.begin(115200);
+  Serial.begin(57600);
   plotGroup = "none";
   serialLog.message("Serial Log Init");
 }

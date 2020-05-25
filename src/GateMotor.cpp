@@ -48,14 +48,14 @@ void GateMotor::stopGate() {
     analogWrite(motorSpeedPin, 0);
 }
 
-void GateMotor::closeGate(bool block) {
+void GateMotor::closeGate(bool block, int speed) {
     serialLog.message("Close Gate", "Motor");
     currentCommand = 'c';
 
     digitalWrite(motorDirectionPin1, false);
     digitalWrite(motorDirectionPin2, true);
 
-    analogWrite(motorSpeedPin, sprintSpeed);
+    analogWrite(motorSpeedPin, speed);
 
     if(block) {
         delay(1000); // get the motors going..

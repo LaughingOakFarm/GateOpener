@@ -2,17 +2,20 @@
 #include "Log.h"
 
 SensorModule::SensorModule() :
-        houseCenter(),
-        roadRight(),
-        roadLeft() {
-    pinMode(buttonGPIO, INPUT);
+        houseCenter("LS1"),
+        roadRight("LS2"),
+        roadLeft("LS3") {
+    pinMode(buttonGPIO, INPUT_PULLUP);
+    pinMode(A2, INPUT);
+    pinMode(A3, INPUT);
+    pinMode(A4, INPUT);
 }
 
 void SensorModule::readSensors() {
-    lightSensor1Value = analogRead(A2);
-    lightSensor2Value = analogRead(A3);
-    lightSensor3Value = analogRead(A4);
-    buttonValue = analogRead(buttonGPIO);
+    lightSensor1Value = analogRead(A3);
+    lightSensor2Value = analogRead(A4);
+    lightSensor3Value = analogRead(A5);
+    buttonValue = digitalRead(buttonGPIO);
 
     serialLog.plot("SM", "Light1", lightSensor1Value);
     serialLog.plot("SM", "Light2", lightSensor2Value);
@@ -30,7 +33,7 @@ bool SensorModule::buttonPressed() {
         serialLog.message("Button Cool Down Time is over.", "SM");
     }
 
-    if (buttonValue > 1000) { // button pressed down
+    if (buttonValue == 0) { // button pressed down
         buttonCoolDownTill = millis() + 1000;
         serialLog.message(String(buttonValue));
         serialLog.message("Button Pressed!", "SM");

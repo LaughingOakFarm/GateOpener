@@ -1,7 +1,10 @@
 #include "LightSensor.h"
 #include "Log.h"
 
-LightSensor::LightSensor() : avg(250) {}
+LightSensor::LightSensor(String name) : avg(50) {
+    sensorName = name;
+    avg.fillValue(500, 50);
+}
 
 bool LightSensor::isTriggered(int rawLightInput) {
 
@@ -14,6 +17,7 @@ bool LightSensor::isTriggered(int rawLightInput) {
     
     avg.addValue(rawLightInput);
     float currentAvg = avg.getAverage();
+    serialLog.message(String(avg.getCount()), "CurVal");
 
     // falling edge detected
     float fallingEdgeThres = currentAvg * 0.90;
@@ -41,14 +45,14 @@ bool LightSensor::isTriggered(int rawLightInput) {
       detectingFlash = false;
     }
 
-    serialLog.plot("LS", "LightInput", rawLightInput);
-    serialLog.plot("LS", "Avg", currentAvg);
-    serialLog.plot("LS", "FallingEdge", fallingEdgeThres);
-    serialLog.plot("LS", "RisingEdge", risingEdgeThres);
-    serialLog.plot("LS", "DetectingFlag", (detectingFlash * 100));
-    serialLog.plot("LS", "FlashCount", (lightFlashNum * 100));
-    serialLog.plot("LS", "Trigger", (trigger * 1000));
-    serialLog.plot("LS", "Timer", flashTimer, true);
+    serialLog.plot(sensorName, "LightInput", rawLightInput);
+    serialLog.plot(sensorName, "Avg", currentAvg);
+    serialLog.plot(sensorName, "FallingEdge", fallingEdgeThres);
+    serialLog.plot(sensorName, "RisingEdge", risingEdgeThres);
+    serialLog.plot(sensorName, "DetectingFlag", (detectingFlash * 100));
+    serialLog.plot(sensorName, "FlashCount", (lightFlashNum * 100));
+    serialLog.plot(sensorName, "Trigger", (trigger * 1000));
+    serialLog.plot(sensorName, "Timer", flashTimer, true);
 
     if(flashTimer) {
       flashTimer--;

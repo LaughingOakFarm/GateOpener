@@ -15,9 +15,10 @@ class LightSensor {
     int lightFlashNum = 0;
     int flashTimer = 0;
     int lightFlashThresh = 3;
+    String sensorName = "";
     
   public:
-    LightSensor();
+    LightSensor(String name = "");
     RunningAverage avg;
     bool isTriggered(int rawLightInput);
 };

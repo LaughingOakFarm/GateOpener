@@ -26,14 +26,16 @@ void GateController::openGate() {
     leftMotor.openGate(false, 255);
     rightMotor.openGate(false, 255);
 
-    delay(15000);
+    delay(12000);
 
-    leftMotor.openGate(false, 235);
-    rightMotor.openGate(false, 235);
+    leftMotor.openGate(false, 150);
+    rightMotor.openGate(false, 150);
 
-    delay(35000); // open gate, wait 35 sec, close gate
+    delay(10000); // open gate, wait 35 sec, close gate
 
     closeGate();
+     
+    stopGate();
 }
 
 void GateController::stopGate() {
@@ -48,8 +50,15 @@ void GateController::closeGate() {
   serialLog.message("Closing Gate", "Controller");
   currentCommand = 'c';
 
-  leftMotor.closeGate(false);
-  rightMotor.closeGate(true);
+  leftMotor.closeGate(false, 255);
+  rightMotor.closeGate(false, 255);
+
+  delay(12000);
+
+  leftMotor.closeGate(false, 150);
+  rightMotor.closeGate(false, 150);
+
+  delay(10000);
 }
 
 //void GateController::triggered() {
