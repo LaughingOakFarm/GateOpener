@@ -1,9 +1,8 @@
 #include "LightSensor.h"
 #include "Log.h"
 
-LightSensor::LightSensor(String name) : avg(50) {
+LightSensor::LightSensor(String name) {
     sensorName = name;
-    avg.fillValue(500, 50);
 }
 
 bool LightSensor::isTriggered(int rawLightInput) {
@@ -15,17 +14,15 @@ bool LightSensor::isTriggered(int rawLightInput) {
   if (currentMicros > (lastLoopMicro + interval)){
     lastLoopMicro = currentMicros;
     
-    avg.addValue(rawLightInput);
-    float currentAvg = avg.getAverage();
-    serialLog.message(String(avg.getCount()), "CurVal");
+    currentAvg = ((currentAvg*9)+rawLightInput)/10;
 
     // falling edge detected
-    float fallingEdgeThres = currentAvg * 0.90;
+    float fallingEdgeThres = currentAvg * 0.85;
     if(!detectingFlash && rawLightInput < fallingEdgeThres) {
       detectingFlash = true;
 
       if(lightFlashNum == 0) {
-        flashTimer = hz * 4; // we have 3 seconds
+        flashTimer = hz * 4; // we have 4 seconds
       }
       
       lightFlashNum++;

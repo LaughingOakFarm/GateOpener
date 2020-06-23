@@ -8,9 +8,12 @@ GateController gateController;
 Log serialLog;
 
 void setup() {
+    analogReference(EXTERNAL);
+    
     delay(1000);
+    
     serialLog.init();
-    serialLog.setPlotGroup("none"); // none, SM, LS1, LS2, LS3
+    serialLog.setPlotGroup("SM"); // none, SM, LS1, LS2, LS3
     gateController.initLeftMotor(9,8,7,6);
     gateController.initRightMotor(11,12,10,5);
 

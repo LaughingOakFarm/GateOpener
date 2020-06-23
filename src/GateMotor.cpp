@@ -1,13 +1,13 @@
 #include "GateMotor.h"
 #include "Log.h"
 
-GateMotor::GateMotor() : motorCurrent(50) {}
+GateMotor::GateMotor() {}
 
 GateMotor::GateMotor(
         uint8_t speedPin,
         uint8_t directionPin1,
         uint8_t directionPin2,
-        uint8_t sensorPin) : motorCurrent(50) {
+        uint8_t sensorPin) {
 
   motorSpeedPin = speedPin;
   motorDirectionPin1 = directionPin1;

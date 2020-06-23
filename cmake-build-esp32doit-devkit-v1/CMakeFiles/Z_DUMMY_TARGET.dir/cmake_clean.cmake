@@ -4,10 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Z_DUMMY_TARGET.dir/src/GateMotor.cpp.obj"
   "CMakeFiles/Z_DUMMY_TARGET.dir/src/LightSensor.cpp.obj"
   "CMakeFiles/Z_DUMMY_TARGET.dir/src/Log.cpp.obj"
-  "CMakeFiles/Z_DUMMY_TARGET.dir/src/Main.cpp.obj"
-  "CMakeFiles/Z_DUMMY_TARGET.dir/src/RunningAverage.cpp.obj"
   "CMakeFiles/Z_DUMMY_TARGET.dir/src/SensorModule.cpp.obj"
-  "CMakeFiles/Z_DUMMY_TARGET.dir/src/analogWrite.cpp.obj"
   "Z_DUMMY_TARGET"
   "Z_DUMMY_TARGET.pdb"
 )

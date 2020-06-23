@@ -284,60 +284,6 @@ src/Log.cpp.s:
 	$(MAKE) -f CMakeFiles/Z_DUMMY_TARGET.dir/build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/Log.cpp.s
 .PHONY : src/Log.cpp.s
 
-src/Main.obj: src/Main.cpp.obj
-
-.PHONY : src/Main.obj
-
-# target to build an object file
-src/Main.cpp.obj:
-	$(MAKE) -f CMakeFiles/Z_DUMMY_TARGET.dir/build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/Main.cpp.obj
-.PHONY : src/Main.cpp.obj
-
-src/Main.i: src/Main.cpp.i
-
-.PHONY : src/Main.i
-
-# target to preprocess a source file
-src/Main.cpp.i:
-	$(MAKE) -f CMakeFiles/Z_DUMMY_TARGET.dir/build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/Main.cpp.i
-.PHONY : src/Main.cpp.i
-
-src/Main.s: src/Main.cpp.s
-
-.PHONY : src/Main.s
-
-# target to generate assembly for a file
-src/Main.cpp.s:
-	$(MAKE) -f CMakeFiles/Z_DUMMY_TARGET.dir/build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/Main.cpp.s
-.PHONY : src/Main.cpp.s
-
-src/RunningAverage.obj: src/RunningAverage.cpp.obj
-
-.PHONY : src/RunningAverage.obj
-
-# target to build an object file
-src/RunningAverage.cpp.obj:
-	$(MAKE) -f CMakeFiles/Z_DUMMY_TARGET.dir/build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/RunningAverage.cpp.obj
-.PHONY : src/RunningAverage.cpp.obj
-
-src/RunningAverage.i: src/RunningAverage.cpp.i
-
-.PHONY : src/RunningAverage.i
-
-# target to preprocess a source file
-src/RunningAverage.cpp.i:
-	$(MAKE) -f CMakeFiles/Z_DUMMY_TARGET.dir/build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/RunningAverage.cpp.i
-.PHONY : src/RunningAverage.cpp.i
-
-src/RunningAverage.s: src/RunningAverage.cpp.s
-
-.PHONY : src/RunningAverage.s
-
-# target to generate assembly for a file
-src/RunningAverage.cpp.s:
-	$(MAKE) -f CMakeFiles/Z_DUMMY_TARGET.dir/build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/RunningAverage.cpp.s
-.PHONY : src/RunningAverage.cpp.s
-
 src/SensorModule.obj: src/SensorModule.cpp.obj
 
 .PHONY : src/SensorModule.obj
@@ -365,33 +311,6 @@ src/SensorModule.cpp.s:
 	$(MAKE) -f CMakeFiles/Z_DUMMY_TARGET.dir/build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/SensorModule.cpp.s
 .PHONY : src/SensorModule.cpp.s
 
-src/analogWrite.obj: src/analogWrite.cpp.obj
-
-.PHONY : src/analogWrite.obj
-
-# target to build an object file
-src/analogWrite.cpp.obj:
-	$(MAKE) -f CMakeFiles/Z_DUMMY_TARGET.dir/build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/analogWrite.cpp.obj
-.PHONY : src/analogWrite.cpp.obj
-
-src/analogWrite.i: src/analogWrite.cpp.i
-
-.PHONY : src/analogWrite.i
-
-# target to preprocess a source file
-src/analogWrite.cpp.i:
-	$(MAKE) -f CMakeFiles/Z_DUMMY_TARGET.dir/build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/analogWrite.cpp.i
-.PHONY : src/analogWrite.cpp.i
-
-src/analogWrite.s: src/analogWrite.cpp.s
-
-.PHONY : src/analogWrite.s
-
-# target to generate assembly for a file
-src/analogWrite.cpp.s:
-	$(MAKE) -f CMakeFiles/Z_DUMMY_TARGET.dir/build.make CMakeFiles/Z_DUMMY_TARGET.dir/src/analogWrite.cpp.s
-.PHONY : src/analogWrite.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -418,18 +337,9 @@ help:
 	@echo "... src/Log.obj"
 	@echo "... src/Log.i"
 	@echo "... src/Log.s"
-	@echo "... src/Main.obj"
-	@echo "... src/Main.i"
-	@echo "... src/Main.s"
-	@echo "... src/RunningAverage.obj"
-	@echo "... src/RunningAverage.i"
-	@echo "... src/RunningAverage.s"
 	@echo "... src/SensorModule.obj"
 	@echo "... src/SensorModule.i"
 	@echo "... src/SensorModule.s"
-	@echo "... src/analogWrite.obj"
-	@echo "... src/analogWrite.i"
-	@echo "... src/analogWrite.s"
 .PHONY : help
 
 

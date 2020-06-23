@@ -2,9 +2,6 @@
 #define GATEMOTOR_H
 
 #include "Arduino.h"
-#include "RunningAverage.h"
-
-class RunningAverage;
 
 class GateMotor {
   private:
@@ -21,7 +18,6 @@ class GateMotor {
     uint8_t motorDirectionPin2;
     uint8_t motorSensorPin;
     uint16_t motorCurrentZeroValue;
-    RunningAverage motorCurrent;
 
     void calibrateCurrentSensor();
    

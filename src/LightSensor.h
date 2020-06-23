@@ -1,9 +1,7 @@
 #ifndef LIGHTSENSOR_H
 #define LIGHTSENSOR_H
 
-#include "RunningAverage.h"
-
-class RunningAverage;
+#include "Arduino.h"
 
 class LightSensor {
   private:
@@ -14,12 +12,12 @@ class LightSensor {
     bool detectingFlash = false;
     int lightFlashNum = 0;
     int flashTimer = 0;
-    int lightFlashThresh = 3;
+    int lightFlashThresh = 4;
     String sensorName = "";
+    float currentAvg = 1;
     
   public:
     LightSensor(String name = "");
-    RunningAverage avg;
     bool isTriggered(int rawLightInput);
 };
 

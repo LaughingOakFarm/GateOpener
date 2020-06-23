@@ -28,13 +28,15 @@ void GateController::openGate() {
 
     delay(12000);
 
-    leftMotor.openGate(false, 150);
-    rightMotor.openGate(false, 150);
+    leftMotor.openGate(false, 175);
+    rightMotor.openGate(false, 175);
 
-    delay(10000); // open gate, wait 35 sec, close gate
+    delay(10000); // open gate
+
+    delay(30000); // wait 30 sec.
 
     closeGate();
-     
+
     stopGate();
 }
 
@@ -55,10 +57,10 @@ void GateController::closeGate() {
 
   delay(12000);
 
-  leftMotor.closeGate(false, 150);
-  rightMotor.closeGate(false, 150);
+  leftMotor.closeGate(false, 175);
+  rightMotor.closeGate(false, 175);
 
-  delay(10000);
+  delay(20000);
 }
 
 //void GateController::triggered() {
